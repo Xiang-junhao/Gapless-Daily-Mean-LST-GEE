@@ -6,7 +6,7 @@ This repository provides Google Earth Engine (GEE) JavaScript code for estimatin
 
 ## Gapless Daily Mean LST
 
-The script `reconstruct_gapless_daily_mean_lst_with_eatc.js` first estimates gapped daily mean LST using linear combinations of two to four valid Terra and Aqua MODIS instantaneous LST observations. Temporal gaps are subsequently reconstructed using the enhanced annual temperature cycle (EATC) model. 
+The script `reconstruct_gapless_daily_mean_lst_with_eatc.js` first estimates gapped daily mean LST using linear combinations of two to four valid Terra and Aqua MODIS instantaneous LST observations. Temporal gaps are subsequently reconstructed using the enhanced annual temperature cycle (EATC) model. For tropical regions, outlier ATC parameters and noise were filtered, and the remaining gaps were filled using spatial interpolation.
 
 ## Pixel-Level Quality Information
 
